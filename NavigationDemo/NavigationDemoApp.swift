@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct NavigationDemoApp: App {
+    
+    @StateObject var viewRouter = ViewRouter()
     var body: some Scene {
         WindowGroup {
-            MotherView()
+            MotherView(viewRouter: viewRouter)
         }
     }
 }

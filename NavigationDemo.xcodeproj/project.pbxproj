@@ -14,6 +14,7 @@
 		E5978575282C429400D3855F /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5978574282C429400D3855F /* MotherView.swift */; };
 		E5978577282C42CA00D3855F /* ContentViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5978576282C42CA00D3855F /* ContentViewB.swift */; };
 		E5978579282C466500D3855F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5978578282C466500D3855F /* Helper.swift */; };
+		E597857B282C4AF000D3855F /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E597857A282C4AF000D3855F /* ViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E5978574282C429400D3855F /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		E5978576282C42CA00D3855F /* ContentViewB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewB.swift; sourceTree = "<group>"; };
 		E5978578282C466500D3855F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E597857A282C4AF000D3855F /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E5978578282C466500D3855F /* Helper.swift */,
 				E597856A282C428000D3855F /* Assets.xcassets */,
 				E597856C282C428000D3855F /* Preview Content */,
+				E597857A282C4AF000D3855F /* ViewRouter.swift */,
 			);
 			path = NavigationDemo;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				E5978569282C428000D3855F /* ContentViewA.swift in Sources */,
 				E5978577282C42CA00D3855F /* ContentViewB.swift in Sources */,
 				E5978579282C466500D3855F /* Helper.swift in Sources */,
+				E597857B282C4AF000D3855F /* ViewRouter.swift in Sources */,
 				E5978575282C429400D3855F /* MotherView.swift in Sources */,
 				E5978567282C428000D3855F /* NavigationDemoApp.swift in Sources */,
 			);

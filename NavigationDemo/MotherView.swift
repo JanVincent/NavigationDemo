@@ -8,20 +8,21 @@
 import SwiftUI
 
 struct MotherView: View {
-    @State var currentPage : page = .page2
+
+    @StateObject var viewRouter : ViewRouter
     
     var body: some View {
-        switch currentPage {
+        switch viewRouter.currentPage {
         case .page1:
-            ContentViewA()
+            ContentViewA(viewRouter: viewRouter)
         case .page2:
-            ContentViewB()
+            ContentViewB(viewRouter: viewRouter)
         }
     }
 }
 
 struct MotherView_Previews: PreviewProvider {
     static var previews: some View {
-        MotherView()
+        MotherView(viewRouter: ViewRouter())
     }
 }
