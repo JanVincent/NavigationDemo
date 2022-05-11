@@ -30,7 +30,9 @@ struct contentView : View{
                 .clipped()
                 
             Button(buttonLabel){
-                buttonAction()
+                    withAnimation {
+                        buttonAction()
+                    }
             }
             .foregroundColor(.white)
             .frame(width: 200, height: 50, alignment: .center)

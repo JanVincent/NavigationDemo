@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentViewB: View {
-    @StateObject var viewRouter : ViewRouter
+    @EnvironmentObject var viewRouter : ViewRouter
     var body: some View {
         contentView(imageName: "happyDog", buttonLabel: "Back") {
             viewRouter.currentPage = .page1
@@ -18,6 +18,6 @@ struct ContentViewB: View {
 
 struct ContentViewB_Previews: PreviewProvider {
     static var previews: some View {
-        ContentViewB(viewRouter: ViewRouter())
+        ContentViewB().environmentObject(ViewRouter())
     }
 }

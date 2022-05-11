@@ -13,7 +13,7 @@ struct NavigationDemoApp: App {
     @StateObject var viewRouter = ViewRouter()
     var body: some Scene {
         WindowGroup {
-            MotherView(viewRouter: viewRouter)
+            MotherView().environmentObject(viewRouter)
         }
     }
 }

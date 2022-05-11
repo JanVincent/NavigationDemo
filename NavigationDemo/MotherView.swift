@@ -9,20 +9,23 @@ import SwiftUI
 
 struct MotherView: View {
 
-    @StateObject var viewRouter : ViewRouter
+    @EnvironmentObject var viewRouter : ViewRouter
     
     var body: some View {
         switch viewRouter.currentPage {
         case .page1:
-            ContentViewA(viewRouter: viewRouter)
+            ContentViewA()
+                .transition(.slide)
         case .page2:
-            ContentViewB(viewRouter: viewRouter)
+            ContentViewB()
+                .transition(.slide)
+                
         }
     }
 }
 
 struct MotherView_Previews: PreviewProvider {
     static var previews: some View {
-        MotherView(viewRouter: ViewRouter())
+        MotherView().environmentObject(ViewRouter())
     }
 }
